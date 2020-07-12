@@ -1,16 +1,16 @@
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  name: classic-wcareuser
-  namespace: classic-sample-ns
+  name: wcareuser
+  namespace: wcare-ns
   labels:
-    app: classic-sample-application
+    app: wcare-application
     subname: wcareuser
 spec:
   path: /
   to:
     kind: Service
-    name: classic-wcareuser
+    name: wcareuser
     weight: 100
   port:
     targetPort: my-http

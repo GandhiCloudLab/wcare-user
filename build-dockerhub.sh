@@ -2,12 +2,10 @@
 
 echo "build Started ...."
 
-# mvn clean package
-
-docker build -f Dockerfile -t gandhicloudlab/classic-wcareuser:latest . 
+docker build -f Dockerfile -t gandhicloudlab/wcareuser:latest . 
 
 # docker login -u gandhicloudlab
 
-docker push gandhicloudlab/classic-wcareuser:latest
+docker push gandhicloudlab/wcareuser:latest
 
 echo "build completed ...."
